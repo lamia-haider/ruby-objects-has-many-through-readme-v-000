@@ -3,5 +3,5 @@ class Customer
 
   @all = []
 
-  
+
 end
