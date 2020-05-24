@@ -24,4 +24,10 @@ class Waiter
       m.waiter == self
     end
   end
+
+  def best_tipper
+    meals.select do |m| meals.tip.max
+      meals.customer
+    end
+  end
 end
