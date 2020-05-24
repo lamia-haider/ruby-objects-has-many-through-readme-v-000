@@ -20,7 +20,7 @@ class Waiter
   end
 
   def meals
-    Meal.all.select do |m|
+    Meal.all.map do |m|
       m.waiter == self
     end
   end
